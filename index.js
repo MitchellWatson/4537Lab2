@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/chatbot', (req, res) => {
-	res.header('Accesss-Control-Allow-Origin')
+	res.header('Access-Control-Allow-Origin', '*');
 	const message = req.body.message;
 	console.log(message)
 	const number = message.match(/\d+/);
