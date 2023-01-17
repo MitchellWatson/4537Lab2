@@ -6,7 +6,7 @@ app.use(express.static(__dirname));
 
 
 app.get('/', (req, res) => {
-	res.sendFile(__dirname + "/front.html");
+	res.sendFile(__dirname + "/index.html");
 });
 
 app.post('/chatbot', (req, res) => {
